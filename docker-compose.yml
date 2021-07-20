@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: canvas-video
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/usr/share/nginx/html

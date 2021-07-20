@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Teste Canvas</title>
+    <meta name="description" content="Teste Canvas">
+    <meta name="author" content="Gustavo Barth">
+
+    <link rel="stylesheet" href="include/css/styles.css?v=1.0">
+</head>
+
+<body>
+    <video id="video" src="media/biceps.mp4" controls="true" crossorigin="anonymous" style="display: none;"></video>
+    <canvas id="canvas" width="500" height="300"></canvas>
+    <button id="play-pause-video">Play/Pause</button>
+    <button id="next-frame">Next Frame</button>
+    <button id="prev-frame">Prev Frame</button>
+    <script src="include/js/video-processor.js">
+        const videoProcessor = new VideoProcessor('video', 'canvas');
+    </script>
+</body>
+</html>
